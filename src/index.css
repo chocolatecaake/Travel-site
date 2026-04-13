@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* -------------------
+   THEME VARIABLES
+------------------- */
+
+:root {
+  --background: 0 0% 100%;
+  --border: 0 0% 90%;
+  --primary-foreground: 0 0% 0%;
+  --dark-green: #202c26;
+  --secondary-color: 329 100% 77%;
+  --tertiary-color: 46 100% 50%;
+}
+
+.dark {
+  --background: 20 5% 10%;
+  --border: 0 0% 20%;
+  --primary-foreground: 0 0% 100%;
+}
+
+/* -------------------
+   BASE
+------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--primary-foreground));
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* -------------------
+   ANIMATIONS
+------------------- */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------
+   UTILITIES
+------------------- */
+
+@utility primary-button {
+  @apply px-6 py-2 rounded-full font-semibold transition-all duration-300;
+  background-color: #e2246c;
+  color: white;
+}
+
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility tertiary-color {
+  color: hsl(var(--tertiary-color));
+}
+
+@utility bg-tertiary {
+  background-color: hsl(var(--tertiary-color));
+}
+
+/* -------------------
+   TYPOGRAPHY
+------------------- */
+
+.homepage-title-font {
+  font-family: "Epilogue", serif;
+  font-size: clamp(2.5rem, 12vw, 9rem);
+}
+
+/* -------------------
+   ROOT LAYOUT
+------------------- */
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+}
