@@ -4,7 +4,7 @@ export const CTASection = () => {
   return (
     <section
       id="ctaSection"
-      className="min-h-screen flex items-center py-24 px-6 gap-3 justify-center text-center relative text-center text-white"
+      className="min-h-screen flex items-center gap-3 justify-center text-center relative text-white"
     >
       {/* Background */}
       <div
@@ -16,8 +16,8 @@ export const CTASection = () => {
       </span>
 
       {/* Content */}
-      <div className="relative mt-4 z-10">
-        <span className="text-white homepage-title-font uppercase tracking-wide bold leading-none animate-fade-in">
+      <div className="relative text-center z-10">
+        <span className="text-white subtitle-font uppercase tracking-wide bold leading-none animate-fade-in">
           Sri Lanka Awaits You
         </span>
 

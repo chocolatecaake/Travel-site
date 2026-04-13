@@ -90,6 +90,11 @@ body {
   font-size: clamp(2.5rem, 12vw, 9rem);
 }
 
+.subtitle-font {
+  font-family: "Epilogue", serif;
+  font-size: clamp(2.5rem, 9vw, 7rem);
+}
+
 /* -------------------
    ROOT LAYOUT
 ------------------- */

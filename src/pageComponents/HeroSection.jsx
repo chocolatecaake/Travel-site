@@ -76,11 +76,11 @@ export const HeroSection = () => {
 
       <div className="container w-full mx-auto z-10 ">
         <div className="space-y-6">
-          <div className="flex flex-col space-y-3 tracking-tight">
+          <div className="flex flex-col space-y-3 items-center tracking-tight">
             <h1 className="secondary-font uppercase tertiary-color font-bold tracking-widest text-xl sm:text-xl md:text-2xl text-center whitespace-normal md:whitespace-nowrap">
               Explore the beauty of
             </h1>
-            <span className="text-white text-center homepage-title-font uppercase font-medium tracking-wide bold leading-none animate-fade-in mb-3">
+            <span className="text-white text-center homepage-title-font uppercase font-medium tracking-wide bold leading-none animate-fade-in">
               Sri Lanka
             </span>
           </div>
@@ -118,14 +118,15 @@ export const HeroSection = () => {
             </div>
           </form>
         </div>
-        <span className="tertiary-color absolute w-1/4 text-left left-5 font-medium tracking-widest bottom-4 text-2xl tertiary-font block hidden sm:block">
+
+        <span className="tertiary-color text-2xl tertiary-font font-medium absolute tracking-widest left-6 bottom-8 max-w-sm">
           Discover beaches, mountains, wildlife and culture
         </span>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <a href="#about">
-          <ArrowDown className="h-5 w-5" />
+      <div className="absolute bottom-8 mx-auto animate-bounce">
+        <a href="#destinations">
+          <ArrowDown className="text-white h-5 w-5" />
         </a>
       </div>
     </section>

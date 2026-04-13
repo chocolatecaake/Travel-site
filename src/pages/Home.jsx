@@ -12,14 +12,14 @@ export const Home = () => {
       {/*Navbar*/}
       <Navbar />
       {/*Main Content*/}
-      <main>
+      <main className="flex flex-col gap-6">
         <HeroSection />
         <Destinations />
         <TravelTips />
         <ExploreWildlife />
         <CTASection />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };
