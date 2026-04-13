@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 
-const DestinationCard = ({ image, title, subtitle }) => {
+const DestinationCard = ({ image, title }) => {
   return (
     <>
       <div className="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer">
@@ -22,7 +22,6 @@ const DestinationCard = ({ image, title, subtitle }) => {
 
         <div className="absolute bottom-4 left-4 text-white">
           <h3 className="text-lg font-semibold tracking-widest">{title}</h3>
-          {/* {subtitle && <p className="text-sm opacity-80">{subtitle}</p>} */}
         </div>
       </div>
     </>

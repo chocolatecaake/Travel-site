@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import landing from "../assets/imgs/landing.jpg";
+import landing from "../../public/landing.webp";
 import { Search } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -61,17 +61,7 @@ export const HeroSection = () => {
       id="home"
       className=" relative min-h-screen flex flex-col items-center justify-center p4 bg-center bg-no-repeat"
     >
-      <div
-        className="absolute bg-no-repeat inset-0 bg-center  bg-cover filter overlay-50"
-        style={{
-          backgroundImage: `url(${landing})`,
-          //backgroundSize: "auto clamp(40vh, 70vh, 90vh)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
-
+      <img src={landing} className="absolute w-full h-full object-cover" />
       <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="container w-full mx-auto z-10 ">
@@ -98,7 +88,7 @@ export const HeroSection = () => {
                 type="submit"
                 className="absolute bg-tertiary rounded-full inset-e-1.5 bottom-1.5 text-white shadow-2xs px-1.5 py-1.5"
               >
-                <Search />
+                <Search aria-label="Search destinations" />
               </button>
 
               {/* Dropdown */}

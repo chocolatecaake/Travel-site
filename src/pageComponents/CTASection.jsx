@@ -7,6 +7,7 @@ export const CTASection = () => {
       className="min-h-screen flex items-center gap-3 justify-center text-center relative text-white"
     >
       {/* Background */}
+
       <div
         className="absolute contain inset-0"
         style={{ backgroundImage: `url(${cta})` }}

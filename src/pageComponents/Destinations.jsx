@@ -1,10 +1,10 @@
 import DestinationCard from "../components/DestinationCard";
-import ella from "../assets/imgs/ella.png";
-import kandy from "../assets/imgs/kandy.png";
-import nuwera from "../assets/imgs/nuweraEliya.png";
-import cuisine from "../assets/imgs/cuisine.png";
-import events from "../assets/imgs/events.png";
-import beaches from "../assets/imgs/beaches.png";
+import ella from "../assets/imgs/ella.webp";
+import kandy from "../assets/imgs/kandy.webp";
+import nuwera from "../assets/imgs/nuweraEliya.webp";
+import cuisine from "../assets/imgs/cuisine.webp";
+import events from "../assets/imgs/events.webp";
+import beaches from "../assets/imgs/beaches.webp";
 
 export const Destinations = () => {
   return (
