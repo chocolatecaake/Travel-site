@@ -29,6 +29,8 @@ export const ExploreWildlife = () => {
         <div className="flex justify-center">
           <img
             src={wildlife}
+            loading="lazy"
+            decoding="async"
             className="w-full max-w-md md:max-w-xl lg:max-w-2xl"
           />
         </div>

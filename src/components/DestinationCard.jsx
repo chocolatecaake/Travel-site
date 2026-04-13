@@ -7,6 +7,8 @@ const DestinationCard = ({ image, title, subtitle }) => {
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full h-[520px] object-cover group-hover:scale-110 transition-transform duration-500"
         />
 
