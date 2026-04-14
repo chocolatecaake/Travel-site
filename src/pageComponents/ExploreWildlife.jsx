@@ -1,5 +1,6 @@
 import wildlife from "../assets/imgs/wildlife.webp";
 import { Button } from "../components/Button";
+import { Reveal } from "../assets/hooks/Reveal";
 
 export const ExploreWildlife = () => {
   return (
@@ -27,13 +28,15 @@ export const ExploreWildlife = () => {
 
         {/* Image */}
         <div className="flex justify-center">
-          <img
-            src={wildlife}
-            alt="sri lankan elephants"
-            loading="lazy"
-            decoding="async"
-            className="w-full max-w-md md:max-w-xl lg:max-w-2xl"
-          />
+          <Reveal delay={300}>
+            <img
+              src={wildlife}
+              alt="sri lankan elephants"
+              loading="lazy"
+              decoding="async"
+              className="w-full max-w-md md:max-w-xl lg:max-w-2xl"
+            />
+          </Reveal>
         </div>
       </div>
     </section>

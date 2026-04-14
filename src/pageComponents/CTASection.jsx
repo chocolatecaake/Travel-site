@@ -1,5 +1,7 @@
 import cta from "../assets/imgs/Awaits.svg";
 import { Button } from "../components/Button";
+import { Reveal } from "../assets/hooks/Reveal";
+
 export const CTASection = () => {
   return (
     <section
@@ -18,10 +20,11 @@ export const CTASection = () => {
 
       {/* Content */}
       <div className="relative text-center z-10">
-        <span className="text-white subtitle-font uppercase tracking-wide bold leading-none animate-fade-in">
-          Sri Lanka Awaits You
-        </span>
-
+        <Reveal>
+          <span className="text-white subtitle-font uppercase tracking-wide bold leading-none animate-fade-in">
+            Sri Lanka Awaits You
+          </span>
+        </Reveal>
         <p className="max-w-xl font-semibold text-2xl mx-auto">
           Start your unforgettable journey today and explore the pearl of the
           Indian Ocean.
@@ -29,7 +32,7 @@ export const CTASection = () => {
         <Button
           href="https://www.srilankan.com"
           variant="light"
-          className="mt-3 px-8"
+          className="mt-3 px-8 btn-shine"
         >
           Book Your Visit
         </Button>

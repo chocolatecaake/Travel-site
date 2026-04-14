@@ -5,6 +5,7 @@ import nuwera from "../assets/imgs/nuweraEliya.webp";
 import cuisine from "../assets/imgs/cuisine.webp";
 import events from "../assets/imgs/events.webp";
 import beaches from "../assets/imgs/beaches.webp";
+import { Reveal } from "../assets/hooks/Reveal";
 
 export const Destinations = () => {
   return (
@@ -18,13 +19,19 @@ export const Destinations = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <DestinationCard
-              image={ella}
-              title="Ella"
-              subtitle="Nine Arches bridge"
-            />
-            <DestinationCard image={kandy} title="Kandy" />
-            <DestinationCard image={nuwera} title="Nuwera Eliya" />
+            <Reveal delay={100}>
+              <DestinationCard
+                image={ella}
+                title="Ella"
+                subtitle="Nine Arches bridge"
+              />
+            </Reveal>
+            <Reveal delay={200}>
+              <DestinationCard image={kandy} title="Kandy" />
+            </Reveal>
+            <Reveal delay={300}>
+              <DestinationCard image={nuwera} title="Nuwera Eliya" />
+            </Reveal>
           </div>
         </div>
 
@@ -35,9 +42,15 @@ export const Destinations = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <DestinationCard image={cuisine} title="Cuisine" />
-            <DestinationCard image={beaches} title="Beaches" />
-            <DestinationCard image={events} title="Events" />
+            <Reveal delay={100}>
+              <DestinationCard image={cuisine} title="Cuisine" />
+            </Reveal>
+            <Reveal delay={200}>
+              <DestinationCard image={beaches} title="Beaches" />
+            </Reveal>
+            <Reveal delay={300}>
+              <DestinationCard image={events} title="Events" />
+            </Reveal>
           </div>
         </div>
       </div>
